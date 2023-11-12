@@ -10,10 +10,6 @@ export default function Interface()
 {
   const [stage] = useAtom(stageAtom);
 
-  useEffect(() => {
-    console.log(stage)
-  }, [stage])
-
   return <>
     <Show when={stage.id === STAGES_MAP.INTRO_STAGE}>
       <IntroInterface />
